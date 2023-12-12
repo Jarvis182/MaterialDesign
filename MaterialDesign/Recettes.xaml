@@ -26,7 +26,8 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <materialDesign:Card Grid.Row="0" Grid.Column="0" Width="220">
+        <!-- 1st Card -->
+        <materialDesign:Card Grid.Row="0" Grid.Column="0" Width="300">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="140" />
@@ -46,6 +47,8 @@
       HorizontalAlignment="Right"
       VerticalAlignment="Bottom"
       Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryButton}">
+
+
                     <materialDesign:PackIcon
         Kind="ShareVariant" />
                 </Button>
@@ -67,6 +70,7 @@
                               Value="3" />
                     </Viewbox>
                     <Grid Width="150">
+
                         <Button
                         Margin="2,0"
                         materialDesign:ButtonProgressAssist.IsIndeterminate="True"
@@ -75,10 +79,19 @@
                         Content="Voir la recette"
                         IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                         Style="{StaticResource MaterialDesignOutlinedButton}" />
+
+                        <!-- Bouton LOVE -->
+                        <Button
+                        Content="LOVE"
+                        IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Margin="28,48,32,-48" />
+
+
+
+
                     </Grid>
 
                 </StackPanel>
-               
+
                 <Grid
       Grid.Row="4">
                     <Grid.ColumnDefinitions>
@@ -86,19 +99,19 @@
           Width="Auto" />
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
-                  
-                   
+
+
                 </Grid>
                 <StackPanel
       Grid.Row="5">
-                   
+
                 </StackPanel>
             </Grid>
         </materialDesign:Card>
 
-        
+
         <!-- 2nd Card -->
-        <materialDesign:Card Grid.Row="0" Grid.Column="1" Width="220">
+        <materialDesign:Card Grid.Row="0" Grid.Column="1" Width="300">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="140" />
@@ -167,10 +180,10 @@
                 </StackPanel>
             </Grid>
         </materialDesign:Card>
-        
+
         <!-- 3ème Card -->
 
-        <materialDesign:Card Grid.Row="1" Grid.Column="0" Width="220">
+        <materialDesign:Card Grid.Row="1" Grid.Column="0" Width="300">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="140" />
@@ -243,7 +256,7 @@
 
         <!-- 4ème Card -->
 
-        <materialDesign:Card Grid.Row="1" Grid.Column="1" Width="220">
+        <materialDesign:Card Grid.Row="1" Grid.Column="1" Width="300">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="140" />
@@ -312,9 +325,9 @@
                 </StackPanel>
             </Grid>
         </materialDesign:Card>
-        
+
         <!-- 5ème Card -->
-        <materialDesign:Card Grid.Row="0" Grid.Column="3" Width="220">
+        <materialDesign:Card Grid.Row="0" Grid.Column="3" Width="300">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="140" />
@@ -383,9 +396,9 @@
                 </StackPanel>
             </Grid>
         </materialDesign:Card>
-        
+
         <!-- 6ème Card -->
-        <materialDesign:Card Grid.Row="1" Grid.Column="3" Width="220">
+        <materialDesign:Card Grid.Row="1" Grid.Column="3" Width="300">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="140" />

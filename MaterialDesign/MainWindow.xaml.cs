@@ -19,6 +19,7 @@ namespace MaterialDesign
         public MainWindow()
         {
             InitializeComponent();
+            frame.Content = new Recettes();
         }
     }
 }
