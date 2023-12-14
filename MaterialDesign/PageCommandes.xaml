@@ -17,7 +17,7 @@
             FontFamily="{DynamicResource MaterialDesignFont}" >
 
     <DockPanel>
-        <StackPanel DockPanel.Dock="Left" Width="200" Background="#FFFF5200" >
+        <StackPanel DockPanel.Dock="Left" Width="200" Background="#FF673AB7" >
 
 
             <!--<Button
@@ -31,6 +31,9 @@
                     <TextBlock Text="Entrées" />
                 </Button>-->
 
+
+                <Rectangle Height="30"></Rectangle>
+
             <Button
                       Height="40"
                       Margin="5"
@@ -38,7 +41,7 @@
                       Content="Entrées"
                       IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                       Style="{StaticResource MaterialDesignPaperSecondaryLightButton}"
-                      ToolTip="Allé" Background="{x:Null}" Foreground="#DDFFFFFF" FontWeight="Bold" FontSize="22" FontFamily="Roboto" BorderBrush="#FFFF5200" />
+                      ToolTip="Allé" Foreground="#DDFFFFFF" FontWeight="Bold" FontSize="22" FontFamily="Roboto" BorderBrush="{x:Null}" Background="#FF804AE0" />
 
             <Button
                       Height="40" Margin="5"
@@ -46,7 +49,7 @@
                       Content="Plats"
                       IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                       Style="{StaticResource MaterialDesignPaperSecondaryLightButton}"
-                      ToolTip="Allé" Background="{x:Null}" Foreground="#DDFFFFFF" FontWeight="Bold" FontSize="22" FontFamily="Roboto" BorderBrush="#FFFF5200" />
+                      ToolTip="Allé" Background="#FF804AE0" Foreground="#DDFFFFFF" FontWeight="Bold" FontSize="22" FontFamily="Roboto" BorderBrush="{x:Null}" />
 
             <Button
                       Height="40" Margin="5"
@@ -54,7 +57,7 @@
                       Content="Desserts"
                       IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                       Style="{StaticResource MaterialDesignPaperSecondaryLightButton}"
-                      ToolTip="Allé" Background="{x:Null}" Foreground="#DDFFFFFF" FontWeight="Bold" FontSize="22" FontFamily="Roboto" BorderBrush="#FFFF5200" />
+                      ToolTip="Allé" Background="#FF804AE0" Foreground="#DDFFFFFF" FontWeight="Bold" FontSize="22" FontFamily="Roboto" BorderBrush="{x:Null}" />
 
             <Button
                       Height="40" Margin="5"
@@ -62,14 +65,14 @@
                       Content="Boissons"
                       IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                       Style="{StaticResource MaterialDesignPaperSecondaryLightButton}"
-                      ToolTip="Allé" Background="{x:Null}" Foreground="#DDFFFFFF" FontWeight="Bold" FontSize="22" FontFamily="Roboto" BorderBrush="#FFFF5200" />
+                      ToolTip="Allé" Background="#FF804AE0" Foreground="#DDFFFFFF" FontWeight="Bold" FontSize="22" FontFamily="Roboto" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" />
 
 
 
 
         </StackPanel>
-        <Rectangle DockPanel.Dock="Top" Height="30" Fill="#FFFF963E" />
-        <Rectangle DockPanel.Dock="Bottom" Height="30" Fill="#FFFF963E" />
+        <Rectangle DockPanel.Dock="Top" Height="30" Fill="#FFFBA100" />
+        <Rectangle DockPanel.Dock="Bottom" Height="30" Fill="#FFFBA100" />
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -80,12 +83,15 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            
+
             <!-- Burger01-->
             <GroupBox Grid.Row="0" Grid.Column="0"
               Margin="16"
               Header="Cheese Burger">
-                <Image Source="/Burger01.jpeg"/>
+                <Button Width="150" Height="120" Background="{x:Null}" Click="Button_Click" BorderBrush="{x:Null}" Foreground="{x:Null}" >
+                    <Image Source="/Burger01.jpeg" Stretch="Fill"/>
+                </Button>
+
             </GroupBox>
 
             <!-- Burger02-->
