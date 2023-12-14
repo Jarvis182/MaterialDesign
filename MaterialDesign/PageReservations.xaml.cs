@@ -24,5 +24,10 @@ namespace MaterialDesign
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            DBG.Text = "Nouvelle réservation de " + NomTextBox.Text + " - " + PrenomTextBox.Text + " - " + TelephoneTextBox.Text;
+        }
     }
 }

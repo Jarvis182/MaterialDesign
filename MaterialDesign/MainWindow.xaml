@@ -22,12 +22,14 @@
             <StackPanel
     Orientation="Horizontal">
                 <Button
+                    Margin="10"
     Content="RECETTES"
     IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
     Style="{StaticResource MaterialDesignRaisedSecondaryButton}"
     ToolTip="Resource name: MaterialDesignRaisedSecondaryButton" />
 
                 <Button
+                    Margin="10"
     Content="DETAILS RECETTE"
     IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
     Style="{StaticResource MaterialDesignRaisedSecondaryButton}"
@@ -35,6 +37,7 @@
 
                 <Button
                 Content="RESERVATIONS"
+                    Margin="10"
                 IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                 Style="{StaticResource MaterialDesignRaisedSecondaryButton}"
                 ToolTip="Resource name: MaterialDesignRaisedSecondaryButton" Width="150" Click="Button_RESERVATIONS_Click" />

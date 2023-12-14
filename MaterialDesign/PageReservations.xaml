@@ -24,11 +24,63 @@
         </TextBlock>
 
         <TextBox
-            Width="350"
+            Width="250"
           x:Name="NomTextBox"
-          materialDesign:HintAssist.Hint="Name">
+          materialDesign:HintAssist.Hint="Nom">
         </TextBox>
+        <TextBox
+              Width="250"
+              x:Name="PrenomTextBox"
+              materialDesign:HintAssist.Hint="Prénom">
+        </TextBox>        
+        <TextBox
+              Width="250"
+              x:Name="TelephoneTextBox"
+              materialDesign:HintAssist.Hint="Téléphone">
+        </TextBox>
+        <ComboBox Width="250"
+  materialDesign:HintAssist.Hint="Type de chambre">
+            <ComboBoxItem Content="Simple" />
+            <ComboBoxItem Content="Double" />
+            <ComboBoxItem Content="Luxe" />
+            <ComboBoxItem Content="Suite Royal" />
+        </ComboBox>
 
+        <StackPanel
+             Margin="8,0">
+            <CheckBox Width="100"
+            materialDesign:RippleAssist.IsDisabled="True"
+            Content="Petit déjeuner"
+            IsChecked="True" />
+        </StackPanel>
+
+
+        <StackPanel Orientation="Horizontal" Width="250">
+            <DatePicker Margin="5"
+                Width="115"
+                materialDesign:HintAssist.Hint="Arrivée"
+                materialDesign:TextFieldAssist.HasClearButton="True"
+                Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+            <DatePicker Margin="5"
+                Width="115"
+                materialDesign:HintAssist.Hint="Départ"
+                materialDesign:TextFieldAssist.HasClearButton="True"
+                Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+        </StackPanel>
+
+
+            <Button Width="150"
+                    Margin="10"
+                    Click="Button_Click"
+                    materialDesign:ButtonAssist.CornerRadius="10"
+                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                    Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                    ToolTip="MaterialDesignRaisedDarkButton with Round Corners">
+                <TextBlock Text="VALIDER"/>
+            </Button>
+        <TextBlock x:Name="DBG" Text ="Debug" Background="#FF4BD1AD" Height="32">
+            
+        </TextBlock>
 
 
     </StackPanel>
