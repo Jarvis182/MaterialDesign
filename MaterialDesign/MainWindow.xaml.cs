@@ -26,5 +26,11 @@ namespace MaterialDesign
         {
             frame.Content = new PageRecettes();
         }
+
+        private void Button_RESERVATIONS_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Content = new PageReservations();
+        }
+
     }
 }

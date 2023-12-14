@@ -12,6 +12,7 @@
     <None Remove="IMG_7997.jpeg" />
     <None Remove="IMG_8138.jpeg" />
     <None Remove="ratatouille.PNG" />
+    <None Remove="Reservations.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +23,7 @@
     <Resource Include="IMG_7997.jpeg" />
     <Resource Include="IMG_8138.jpeg" />
     <Resource Include="ratatouille.PNG" />
+    <Resource Include="Reservations.jpg" />
   </ItemGroup>
 
 </Project>
