@@ -41,6 +41,15 @@
                 IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                 Style="{StaticResource MaterialDesignRaisedSecondaryButton}"
                 ToolTip="Resource name: MaterialDesignRaisedSecondaryButton" Width="150" Click="Button_RESERVATIONS_Click" />
+
+                <Button
+                Content="COMMANDES"
+                    Margin="10"
+                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                Style="{StaticResource MaterialDesignRaisedSecondaryButton}"
+                ToolTip="Resource name: MaterialDesignRaisedSecondaryButton" Width="150" Click="Button_COMMANDES_Click" />
+                
+                
             </StackPanel>
         </materialDesign:ColorZone>
         <Frame x:Name="frame" Height="620"/>

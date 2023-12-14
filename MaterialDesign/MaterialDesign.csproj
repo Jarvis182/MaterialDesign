@@ -9,6 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Burger01.jpeg" />
+    <None Remove="Burger02.jpeg" />
+    <None Remove="Burger03.jpeg" />
+    <None Remove="Burger04.jpeg" />
+    <None Remove="Burger05.jpeg" />
+    <None Remove="Burger06.jpeg" />
     <None Remove="IMG_7997.jpeg" />
     <None Remove="IMG_8138.jpeg" />
     <None Remove="ratatouille.PNG" />
@@ -20,6 +26,24 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Burger01.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Burger02.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Burger03.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Burger04.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Burger05.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Burger06.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="IMG_7997.jpeg" />
     <Resource Include="IMG_8138.jpeg" />
     <Resource Include="ratatouille.PNG" />

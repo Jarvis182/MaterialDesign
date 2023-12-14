@@ -32,5 +32,9 @@ namespace MaterialDesign
             frame.Content = new PageReservations();
         }
 
+        private void Button_COMMANDES_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Content = new PageCommandes();
+        }
     }
 }
