@@ -32,7 +32,14 @@
                 </Button>-->
 
 
-                <Rectangle Height="30"></Rectangle>
+            <Rectangle Height="30">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF673AB7" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
 
             <Button
                       Height="40"
@@ -71,8 +78,22 @@
 
 
         </StackPanel>
-        <Rectangle DockPanel.Dock="Top" Height="30" Fill="#FFFBA100" />
-        <Rectangle DockPanel.Dock="Bottom" Height="30" Fill="#FFFBA100" />
+        <Rectangle DockPanel.Dock="Top" Height="30" >
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF673AB7" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle DockPanel.Dock="Bottom" Height="30" >
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFFFC700" Offset="0"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -85,9 +106,9 @@
             </Grid.RowDefinitions>
 
             <!-- Burger01-->
-            <GroupBox Grid.Row="0" Grid.Column="0"
+            <GroupBox Grid.Row="0" Grid.Column="0" 
               Margin="16"
-              Header="Cheese Burger">
+              Header="Cheese Burger" Background="Transparent">
                 <Button Width="150" Height="120" Background="{x:Null}" Click="Button_Click" BorderBrush="{x:Null}" Foreground="{x:Null}" >
                     <Image Source="/Burger01.jpeg" Stretch="Fill"/>
                 </Button>
