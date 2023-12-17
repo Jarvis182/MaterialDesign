@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,29 +11,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace MaterialDesign
 {
     /// <summary>
-    /// Logique d'interaction pour PageCommandes.xaml
+    /// Logique d'interaction pour FenetrePlats.xaml
     /// </summary>
-    public partial class PageCommandes : Page
+    public partial class FenetrePlats : Window
     {
-        public PageCommandes()
+        public FenetrePlats()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_PS5(object sender, RoutedEventArgs e, MessageBoxButton messageBoxButton)
         {
-            MessageBox.Show("Commande Burger 01 !");
+            MessageBoxResult messageBoxResult = MessageBox.Show("Commandez la PS5 Limited Edtion 2023");
         }
-
-        //private void Button_Plats(object sender, RoutedEventArgs e)
-        //{
-        //    frame.Content = new FenetrePlats();
-        //}
     }
 }

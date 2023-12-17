@@ -17,6 +17,7 @@
     <None Remove="Burger06.jpeg" />
     <None Remove="IMG_7997.jpeg" />
     <None Remove="IMG_8138.jpeg" />
+    <None Remove="PS5LimitedEdition.jpg" />
     <None Remove="ratatouille.PNG" />
     <None Remove="Reservations.jpg" />
   </ItemGroup>
@@ -46,6 +47,9 @@
     </Resource>
     <Resource Include="IMG_7997.jpeg" />
     <Resource Include="IMG_8138.jpeg" />
+    <Resource Include="PS5LimitedEdition.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="ratatouille.PNG" />
     <Resource Include="Reservations.jpg" />
   </ItemGroup>
