@@ -8,7 +8,7 @@
         Title="FenetrePlats" Height="450" Width="800">
     <Grid Background="Black">
         <Button HorizontalAlignment="Center" 
-                VerticalAlignment="Center"  Background="#FF65FF00" Height="285" Width="520" >
+                VerticalAlignment="Center" Background="#FF65FF00" Height="285" Width="520" >
             <Image Source="/PS5LimitedEdition.jpg"  Height="256" Width="488" Stretch="Fill" />
         </Button>
 

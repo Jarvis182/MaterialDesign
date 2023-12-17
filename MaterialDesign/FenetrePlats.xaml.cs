@@ -25,7 +25,7 @@ namespace MaterialDesign
             InitializeComponent();
         }
 
-        private void Button_PS5(object sender, RoutedEventArgs e, MessageBoxButton messageBoxButton)
+        private void Button_PS5()
         {
             MessageBoxResult messageBoxResult = MessageBox.Show("Commandez la PS5 Limited Edtion 2023");
         }

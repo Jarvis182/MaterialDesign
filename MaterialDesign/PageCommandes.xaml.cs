@@ -29,10 +29,5 @@ namespace MaterialDesign
         {
             MessageBox.Show("Commande Burger 01 !");
         }
-
-        //private void Button_Plats(object sender, RoutedEventArgs e)
-        //{
-        //    frame.Content = new FenetrePlats();
-        //}
     }
 }
