@@ -84,47 +84,84 @@
         </StackPanel>
 
         <!-- Les Etapes -->
-        <StackPanel Margin="263,0,2,10" Grid.ColumnSpan="2">
+        <StackPanel Margin="260,0,2,10" Grid.ColumnSpan="2">
             <TextBlock
       Style="{StaticResource MaterialDesignHeadline4TextBlock}"
       Text="Les étapes :" Height="56" />
 
 
             <GroupBox
-  Margin="16"
+  Margin="5"
   materialDesign:ElevationAssist.Elevation="Dp6"
   BorderThickness="0"
   Header="Etape 1 :"
   Style="{StaticResource MaterialDesignGroupBox}">
+                <GroupBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF00FFED" Offset="1"/>
+                    </LinearGradientBrush>
+                </GroupBox.Background>
                 <TextBlock
-    Margin="6,6,6,6"
+    Margin="1"
     Text="Laver, Couper les légumes en fines tranches."
     TextWrapping="Wrap" />
             </GroupBox>
 
             <GroupBox
-  Margin="16"
+  Margin="2"
   materialDesign:ElevationAssist.Elevation="Dp6"
   BorderThickness="0"
   Header="Etape 2 :"
   Style="{StaticResource MaterialDesignGroupBox}">
+                <GroupBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF00FFED" Offset="1"/>
+                    </LinearGradientBrush>
+                </GroupBox.Background>
                 <TextBlock
-    Margin="6,6,6,6"
+    Margin="2"
     Text="Faire revenir quelques minutes les légumes à la poêle et penser à ajouter Sel et poivre."
     TextWrapping="Wrap" />
             </GroupBox>
 
             <GroupBox
-  Margin="16"
+  Margin="5"
   materialDesign:ElevationAssist.Elevation="Dp6"
   BorderThickness="0"
   Header="Etape 3 :"
   Style="{StaticResource MaterialDesignGroupBox}">
+                <GroupBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF00FFED" Offset="1"/>
+                    </LinearGradientBrush>
+                </GroupBox.Background>
                 <TextBlock
-    Margin="6,6,6,6"
+    Margin="2"
     Text="Laisser mijoter à feu doux pendant 1 heure."
     TextWrapping="Wrap" />
             </GroupBox>
+
+            <GroupBox
+            Margin="5"
+            materialDesign:ElevationAssist.Elevation="Dp6"
+            BorderThickness="0"
+            Header="Etape 4 :"
+            Style="{StaticResource MaterialDesignGroupBox}">
+                <GroupBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF00FFED" Offset="1"/>
+                    </LinearGradientBrush>
+                </GroupBox.Background>
+                <TextBlock
+              Margin="6,6,6,6"
+              Text="Dégustez !"
+              TextWrapping="Wrap" />
+            </GroupBox>
+
         </StackPanel>
 
 
